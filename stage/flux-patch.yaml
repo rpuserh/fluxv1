@@ -1,0 +1,10 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: stage-app
+  namespace: stage
+spec:
+  values:
+    image:
+      tag: 1.21.7
