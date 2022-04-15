@@ -10,5 +10,5 @@ spec:
     replicaCount: 3
     image:
       registry: gcr.io
-      repository: playground-s-11-cf96556d/nginx
+      repository: playground-s-11-33d349a2/nginx
       tag: 1.21.5
