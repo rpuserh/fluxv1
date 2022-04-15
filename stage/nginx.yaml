@@ -1,0 +1,10 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: nginx
+spec:
+  values:
+    controller:
+      resources:
+        requests:
+          cpu: 30m

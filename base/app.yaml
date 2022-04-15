@@ -1,0 +1,12 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: app
+spec:
+  releaseName: app
+  chart:
+    repository: https://charts.bitnami.com/bitnami
+    name: nginx
+    version: 10.1.0
+  values:
+    replicaCount: 2

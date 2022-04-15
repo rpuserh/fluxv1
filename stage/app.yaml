@@ -1,0 +1,14 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: app
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: semver:~1.21
+spec:
+  values:
+    replicaCount: 3
+    image:
+      registry: gcr.io
+      repository: playground-s-11-cf96556d/nginx
+      tag: 1.21.5
